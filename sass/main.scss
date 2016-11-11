@@ -1,0 +1,77 @@
+// @import 'nav';
+// @import 'footer';
+// nav
+.nav-container {
+   background-color: #F1F1F1;
+   height: 115px;
+   .weather-container {
+      display: inline-block;
+      font-family: 'Oswald', sans-serif;
+      font-size: 17px;
+      padding-top: 10px;
+      padding-left: 12px;
+      color: #2A8CEF;
+      .city-name {
+         p {
+            border-bottom: 1 px solid gray;
+         }
+      }
+   }
+   .nav-links {
+      float: right;
+      display: inline-block;
+      text-align: right;
+      font-size: 20px;
+      padding-top: 35px;
+      padding-right: 12px;
+      li {
+         display: inline-block;
+         padding: 0 5px;
+      }
+   }
+}
+
+// product categories
+.product-categories {
+   margin-top: 40px;
+   margin-bottom: 50px;
+   h2 {
+      text-align: center;
+   }
+   img {
+      max-width: 100%;
+      max-height: 450px;
+   }
+}
+
+// product details
+.prodcut-details {
+   margin-top: 20px;
+   margin-bottom: 50px;
+   h2 {
+      text-align: center;
+   }
+}
+
+// home
+.main-content {
+   text-align: center;
+   margin-bottom: 50px;
+   margin-top: 30px;
+   .home-splash-image {
+      margin-top: 45px;
+      border-radius: 5px;
+   }
+   .home-search {}
+}
+
+// footer 
+footer {
+   background-color: black;
+   height: 100px;
+   color: white;
+   .copyright-info {
+      text-align: center;
+      padding-top: 9px;
+   }
+}

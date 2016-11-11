@@ -1,0 +1,8 @@
+<div class="container">
+   <div class="row">
+      <div class="col-md-3 main-content" ng-repeat="photo in controller.photos track by $index">
+         <img src="{{photo.url}}" ng-dblclick="controller.onClickLike(photo._id)" ng-click="controller.onClickDetails(photo._id,photo)">
+         <h1>{{photo.likes}}</h1>
+      </div>
+   </div>
+</div>

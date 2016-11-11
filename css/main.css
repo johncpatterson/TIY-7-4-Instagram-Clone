@@ -1,0 +1,53 @@
+.nav-container {
+  background-color: #F1F1F1;
+  height: 115px; }
+  .nav-container .weather-container {
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-left: 12px;
+    color: #2A8CEF; }
+    .nav-container .weather-container .city-name p {
+      border-bottom: 1 px solid gray; }
+  .nav-container .nav-links {
+    float: right;
+    display: inline-block;
+    text-align: right;
+    font-size: 20px;
+    padding-top: 35px;
+    padding-right: 12px; }
+    .nav-container .nav-links li {
+      display: inline-block;
+      padding: 0 5px; }
+
+.product-categories {
+  margin-top: 40px;
+  margin-bottom: 50px; }
+  .product-categories h2 {
+    text-align: center; }
+  .product-categories img {
+    max-width: 100%;
+    max-height: 450px; }
+
+.prodcut-details {
+  margin-top: 20px;
+  margin-bottom: 50px; }
+  .prodcut-details h2 {
+    text-align: center; }
+
+.main-content {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px; }
+  .main-content .home-splash-image {
+    margin-top: 45px;
+    border-radius: 5px; }
+
+footer {
+  background-color: black;
+  height: 100px;
+  color: white; }
+  footer .copyright-info {
+    text-align: center;
+    padding-top: 9px; }

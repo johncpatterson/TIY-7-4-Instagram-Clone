@@ -1,0 +1,3 @@
+# TIY-7-1-Ui Shop & TIY-7-2-Ui Shop with weather
+
+The Iron Yard week 7, day 1 assignment.  The goal of this assignment was to begin building a very simple site to learn basic [Ui Router] (https://ui-router.github.io/) routing. The site was updated with the 7-2 assignment by adding the current weather at the top of the page using an [Angular directive] (https://docs.angularjs.org/guide/directive) with weather data from the [Open Weather Map API] (https://openweathermap.org/api). 
