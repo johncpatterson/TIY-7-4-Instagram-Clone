@@ -19,7 +19,7 @@
          }
 
          vm.onClickDetails = function(id) {
-
+         	
          }
       });
 })();

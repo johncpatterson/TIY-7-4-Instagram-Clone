@@ -1,48 +1,53 @@
 .nav-container {
-  background-color: #F1F1F1;
-  height: 115px; }
-  .nav-container .weather-container {
-    display: inline-block;
-    font-family: 'Oswald', sans-serif;
-    font-size: 17px;
-    padding-top: 10px;
-    padding-left: 12px;
-    color: #2A8CEF; }
-    .nav-container .weather-container .city-name p {
-      border-bottom: 1 px solid gray; }
-  .nav-container .nav-links {
-    float: right;
-    display: inline-block;
-    text-align: right;
-    font-size: 20px;
-    padding-top: 35px;
-    padding-right: 12px; }
-    .nav-container .nav-links li {
+  background-color: #ffffff;
+  min-height: 80px;
+  max-height: 150px;
+  border-bottom: 1px solid #dbdbdb; }
+  .nav-container .inner-nav-container {
+    margin-top: 20px; }
+    .nav-container .inner-nav-container .instagram-logo-div {
+      text-align: center; }
+      .nav-container .inner-nav-container .instagram-logo-div .fa-instagram {
+        font-size: 35px;
+        margin-right: 10px;
+        padding-right: 18px;
+        border-right: 1px solid black; }
+      .nav-container .inner-nav-container .instagram-logo-div .fa-home {
+        font-size: 35px; }
+      .nav-container .inner-nav-container .instagram-logo-div .fa-file-image-o {
+        font-size: 35px; }
+      .nav-container .inner-nav-container .instagram-logo-div img.instagram-text-logo {
+        max-width: 124px;
+        padding-bottom: 9px;
+        padding-left: 5px; }
+    .nav-container .inner-nav-container .search-input-div input {
+      width: 70%;
+      display: inline;
+      margin-left: 45px;
+      font-size: 14px;
+      text-align: center;
+      background: #fafafa; }
+    .nav-container .inner-nav-container .nav-links {
       display: inline-block;
-      padding: 0 5px; }
+      text-align: right;
+      font-size: 20px;
+      padding-right: 12px; }
+      .nav-container .inner-nav-container .nav-links li {
+        display: inline-block;
+        padding: 0 5px; }
 
-.product-categories {
+.main-content .list-of-images img {
+  max-width: 50px;
+  max-height: 50px; }
+
+.photo-details {
   margin-top: 40px;
   margin-bottom: 50px; }
-  .product-categories h2 {
+  .photo-details h2 {
     text-align: center; }
-  .product-categories img {
+  .photo-details img {
     max-width: 100%;
     max-height: 450px; }
-
-.prodcut-details {
-  margin-top: 20px;
-  margin-bottom: 50px; }
-  .prodcut-details h2 {
-    text-align: center; }
-
-.main-content {
-  text-align: center;
-  margin-bottom: 50px;
-  margin-top: 30px; }
-  .main-content .home-splash-image {
-    margin-top: 45px;
-    border-radius: 5px; }
 
 footer {
   background-color: black;

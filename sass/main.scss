@@ -2,37 +2,68 @@
 // @import 'footer';
 // nav
 .nav-container {
-   background-color: #F1F1F1;
-   height: 115px;
-   .weather-container {
-      display: inline-block;
-      font-family: 'Oswald', sans-serif;
-      font-size: 17px;
-      padding-top: 10px;
-      padding-left: 12px;
-      color: #2A8CEF;
-      .city-name {
-         p {
-            border-bottom: 1 px solid gray;
+   background-color: #ffffff;
+   min-height: 80px;
+   max-height: 150px;
+   border-bottom: 1px solid #dbdbdb;
+   .inner-nav-container {
+      margin-top: 20px;
+      .instagram-logo-div {
+         text-align: center;
+         .fa-instagram {
+            font-size: 35px;
+            margin-right: 10px;
+            padding-right: 18px;
+            border-right: 1px solid black;
+         }
+         .fa-home {
+            font-size: 35px;
+         }
+         .fa-file-image-o {
+            font-size: 35px;
+         }
+         img.instagram-text-logo {
+            max-width: 124px;
+            padding-bottom: 9px;
+            padding-left: 5px;
          }
       }
-   }
-   .nav-links {
-      float: right;
-      display: inline-block;
-      text-align: right;
-      font-size: 20px;
-      padding-top: 35px;
-      padding-right: 12px;
-      li {
+      .search-input-div {
+         input {
+            width: 70%;
+            display: inline;
+            margin-left: 45px;
+            font-size: 14px;
+            text-align: center;
+            background: #fafafa;
+         }
+      }
+      .nav-links {
+         // float: right;
          display: inline-block;
-         padding: 0 5px;
+         text-align: right;
+         font-size: 20px;
+         padding-right: 12px;
+         li {
+            display: inline-block;
+            padding: 0 5px;
+         }
       }
    }
 }
 
-// product categories
-.product-categories {
+// home
+.main-content {
+   .list-of-images {
+      img {
+         max-width: 50px;
+         max-height: 50px;
+      }
+   }
+}
+
+// photo details
+.photo-details {
    margin-top: 40px;
    margin-bottom: 50px;
    h2 {
@@ -43,26 +74,9 @@
       max-height: 450px;
    }
 }
-
-// product details
-.prodcut-details {
-   margin-top: 20px;
-   margin-bottom: 50px;
-   h2 {
-      text-align: center;
-   }
-}
-
-// home
-.main-content {
-   text-align: center;
-   margin-bottom: 50px;
-   margin-top: 30px;
-   .home-splash-image {
-      margin-top: 45px;
-      border-radius: 5px;
-   }
-   .home-search {}
+// add a photo
+.add-photo {
+   
 }
 
 // footer 

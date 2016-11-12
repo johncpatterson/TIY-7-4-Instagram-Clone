@@ -11,6 +11,7 @@
                data: newImage,
                headers: { 'X_CSRF_TOKEN': 'patterson' },
                url: 'http://instagramcloneclass.herokuapp.com/image/post'
+               // Data: title,description,url
             });
             return call;
          }
