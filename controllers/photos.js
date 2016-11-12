@@ -19,7 +19,17 @@
          }
 
          vm.onClickDetails = function(id) {
-         	
+         	// need to open the link to the specific image id here to make it go to the photo details page for that image
+         }
+         vm.submit = function() {
+            let newImage = {
+               title: photo-title,
+               description: photo-description,
+               url: photo-url
+            };
+            vm.items = API.createImage(newImage);
+            vm.form = {};
+            $("input").val("");
          }
       });
 })();
