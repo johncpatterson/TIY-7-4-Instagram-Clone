@@ -1,17 +1,17 @@
 <div class="container add-photo">
    <h2>Add a photo</h2>
-   <form ng-submit="photos.submit(photos.form)">
+   <form ng-submit="controller.submit(controller.form)">
       <div class="form-group">
          <label for="photoTitle">Photo Title</label>
-         <input type="text" name="photo-title" class="form-control" ng-model="photos.form.photo-title">
+         <input type="text" name="photo-title" class="form-control" ng-model=controller.form.phototitle>
       </div>
       <div class="form-group">
          <label for="photoUrl">Photo URL</label>
-         <input type="text" name="photo-url" class="form-control" ng-model="photos.form.photo-url">
+         <input type="text" name="photo-url" class="form-control" ng-model=controller.form.photourl>
       </div>
       <div class="form-group">
          <label for="photoDescription">Photo Description</label>
-         <textarea name="photo-description" cols="30" rows="10" class="form-control" ng-model="photos.photo-description"></textarea>
+         <textarea name="photo-description" cols="30" rows="10" class="form-control" ng-model=controller.photodescription></textarea>
       </div>
       <input class="btn btn-success" type="submit" value="Add a new photo">
    </form>

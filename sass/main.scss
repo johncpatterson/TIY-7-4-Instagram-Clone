@@ -60,10 +60,13 @@
 
 // home
 .main-content {
+   margin-top: 40px;
+   margin-bottom: 40px;
    .list-of-images {
       img {
-         max-width: 50px;
-         max-height: 50px;
+         max-width: 265px;
+         max-height: 200px;
+         border-radius: 5px;
       }
    }
 }
