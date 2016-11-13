@@ -64,9 +64,11 @@
    margin-bottom: 40px;
    .list-of-images {
       img {
-         max-width: 265px;
-         max-height: 200px;
+         width: 265px;
+         height: 200px;
          border-radius: 5px;
+         border: 1px solid gray;
+         margin-top: 10px;
       }
    }
 }

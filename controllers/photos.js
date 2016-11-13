@@ -29,7 +29,10 @@
             };
             vm.photos = API.createImage(newImage);
             vm.form = {};
-            $("input").val("");
+            window.location.assign("/#/")
+            $("#photoTitle").val("");
+            $("#photoURL").val("");
+            $("#photoDescription").val("");
          }
       });
 })();
