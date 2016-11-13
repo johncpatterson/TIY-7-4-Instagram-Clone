@@ -21,11 +21,11 @@
          vm.onClickDetails = function(id) {
             // need to open the link to the specific image id here to make it go to the photo details page for that image
          }
-         vm.submit = function() {
+         vm.submit = function(photo) {
             let newImage = {
-               title: phototitle,
-               description: photodescription,
-               url: photourl
+               title: photo.phototitle,
+               description: photo.photodescription,
+               url: photo.photourl
             };
             vm.photos = API.createImage(newImage);
             vm.form = {};
