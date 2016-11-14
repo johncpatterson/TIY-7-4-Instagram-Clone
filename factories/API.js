@@ -35,7 +35,7 @@
             var call = $http({
                method: 'GET',
                headers: { 'X_CSRF_TOKEN': 'patterson' },
-               url: 'http://instagramcloneclass.herokuapp.com/images/{id}'
+               url: `http://instagramcloneclass.herokuapp.com/images/${id}`
             });
             return call;
          }

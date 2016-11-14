@@ -1,5 +1,5 @@
 <div class="container add-photo">
-   <h2>Add a photo</h2>
+   <h2 class="">Add a photo</h2>
    <form ng-submit="controller.submit(controller.form)">
       <div class="form-group">
          <label for="photoTitle">Photo Title</label>
@@ -11,7 +11,8 @@
       </div>
       <div class="form-group">
          <label for="photoDescription">Photo Description</label>
-         <textarea name="photodescription" cols="30" rows="10" class="form-control" id="photoDescription" ng-model="controller.form.photodescription"></textarea>
+         <input name="photodescription" class="form-control" id="photoDescription" ng-model="controller.form.photodescription">
+         <!-- <textarea name="photodescription" cols="30" rows="10" class="form-control" id="photoDescription" ng-model="controller.form.photodescription"></textarea> -->
       </div>
       <input class="btn btn-success" type="submit" value="Add a new photo">
    </form>

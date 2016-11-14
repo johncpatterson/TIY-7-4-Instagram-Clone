@@ -22,11 +22,13 @@
                },
                'sidebar': {
                   templateUrl: 'partials/nav.html',
+                  controller: 'PhotoController',
+                  controllerAs: 'controller'
                }
             }
          })
          .state('details', {
-            url: '/details/:id',
+            url: '/details/:_id',
             views: {
                'content': {
                   templateUrl: 'partials/photodetails.html',
@@ -35,6 +37,8 @@
                },
                'sidebar': {
                   templateUrl: 'partials/nav.html',
+                  controller: 'PhotoController',
+                  controllerAs: 'controller'
                }
             }
          })
@@ -49,6 +53,8 @@
                },
                'sidebar': {
                   templateUrl: 'partials/nav.html',
+                  controller: 'PhotoController',
+                  controllerAs: 'controller'
                }
             }
          })

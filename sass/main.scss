@@ -1,5 +1,9 @@
 // @import 'nav';
 // @import 'footer';
+.hidden {
+   visibility: hidden;
+}
+
 // nav
 .nav-container {
    background-color: #ffffff;
@@ -15,6 +19,7 @@
             margin-right: 10px;
             padding-right: 18px;
             border-right: 1px solid black;
+            color: black;
          }
          img.instagram-text-logo {
             max-width: 124px;
@@ -63,12 +68,25 @@
    margin-top: 40px;
    margin-bottom: 40px;
    .list-of-images {
+      margin-bottom: 10px;
       img {
          width: 265px;
          height: 200px;
          border-radius: 5px;
          border: 1px solid gray;
          margin-top: 10px;
+         margin-bottom: 5px;
+      }
+      i.fa-heart {
+         font-size: 17px;
+      }
+      .photo-likes {
+         font-size: 18px;
+         font-family: 'Molengo', sans-serif;
+      }
+      .photo-title {
+         font-size: 16px;
+         font-family: 'Molengo', sans-serif;
       }
    }
 }

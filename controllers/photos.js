@@ -1,7 +1,7 @@
 (function() {
    angular
       .module('hipstagram')
-      .controller('PhotoController', function(API) {
+      .controller('PhotoController', function(API, $stateParams) {
          let vm = this;
 
          let photos = API.getImages();
@@ -18,8 +18,13 @@
             photo.likes++;
          }
 
-         vm.onClickDetails = function(id) {
-            // need to open the link to the specific image id here to make it go to the photo details page for that image
+         vm.onClickDetails = function(id, photo) {
+            let id = $stateParams.details;
+
+            API.getSingleImage(id);
+
+
+
          }
          vm.submit = function(photo) {
             let newImage = {
@@ -30,9 +35,9 @@
             vm.photos = API.createImage(newImage);
             vm.form = {};
             window.location.assign("/#/")
-            $("#photoTitle").val("");
-            $("#photoURL").val("");
-            $("#photoDescription").val("");
+               // $("#photoTitle").val("");
+               // $("#photoURL").val("");
+               // $("#photoDescription").val("");
          }
       });
 })();

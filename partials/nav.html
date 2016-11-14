@@ -5,7 +5,10 @@
             <a ui-sref='home'><i class="fa fa-instagram" aria-hidden="true"></i><img src="http://logos-download.com/wp-content/uploads/2016/03/Instagram_logo_black.png" alt="instagram-text-logo" class="instagram-text-logo"></a>
          </div>
          <div class="col-md-4 search-input-div">
-            <input type="text" class="form-control" placeholder="search">
+            <form ng-submit="controller.submit(controller.form)">
+               <input type="text" class="form-control" name="photourl" ng-model="controller.form.photourl" placeholder="search">
+               <input class="btn btn-success hidden" type="submit" value="Add a new photo">
+            </form>
          </div>
          <div class="col-md-4 nav-links-div">
             <ul class="nav-links">

@@ -1,3 +1,6 @@
+.hidden {
+  visibility: hidden; }
+
 .nav-container {
   background-color: #ffffff;
   min-height: 80px;
@@ -11,7 +14,8 @@
         font-size: 35px;
         margin-right: 10px;
         padding-right: 18px;
-        border-right: 1px solid black; }
+        border-right: 1px solid black;
+        color: black; }
       .nav-container .inner-nav-container .instagram-logo-div img.instagram-text-logo {
         max-width: 124px;
         padding-bottom: 9px;
@@ -45,12 +49,23 @@
 .main-content {
   margin-top: 40px;
   margin-bottom: 40px; }
-  .main-content .list-of-images img {
-    width: 265px;
-    height: 200px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    margin-top: 10px; }
+  .main-content .list-of-images {
+    margin-bottom: 10px; }
+    .main-content .list-of-images img {
+      width: 265px;
+      height: 200px;
+      border-radius: 5px;
+      border: 1px solid gray;
+      margin-top: 10px;
+      margin-bottom: 5px; }
+    .main-content .list-of-images i.fa-heart {
+      font-size: 17px; }
+    .main-content .list-of-images .photo-likes {
+      font-size: 18px;
+      font-family: 'Molengo', sans-serif; }
+    .main-content .list-of-images .photo-title {
+      font-size: 16px;
+      font-family: 'Molengo', sans-serif; }
 
 .photo-details {
   margin-top: 40px;
