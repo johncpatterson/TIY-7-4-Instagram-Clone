@@ -3,15 +3,15 @@
    <form ng-submit="controller.submit(controller.form)">
       <div class="form-group">
          <label for="photoTitle">Photo Title</label>
-         <input type="text" name="phototitle" class="form-control" id="photoTitle" ng-model="controller.form.phototitle">
+         <input type="text" name="phototitle" class="form-control" id="photoTitle" ng-model="controller.form.phototitle" placeholder="type your photo title here">
       </div>
       <div class="form-group">
          <label for="photoUrl">Photo URL</label>
-         <input type="text" name="photourl" class="form-control" id="photoURL" ng-model="controller.form.photourl">
+         <input type="text" name="photourl" class="form-control" id="photoURL" ng-model="controller.form.photourl" placeholder="paste an image URL here">
       </div>
       <div class="form-group">
          <label for="photoDescription">Photo Description</label>
-         <input name="photodescription" class="form-control" id="photoDescription" ng-model="controller.form.photodescription">
+         <input name="photodescription" class="form-control" id="photoDescription" ng-model="controller.form.photodescription" placeholder="type your photo description here">
          <!-- <textarea name="photodescription" cols="30" rows="10" class="form-control" id="photoDescription" ng-model="controller.form.photodescription"></textarea> -->
       </div>
       <input class="btn btn-success" type="submit" value="Add a new photo">

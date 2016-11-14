@@ -6,7 +6,7 @@
 
          let photos = API.getImages();
          photos.then(function(returnedPhotos) {
-            console.log(returnedPhotos);
+            // console.log(returnedPhotos);
             vm.photos = returnedPhotos.data.images;
          })
 
@@ -42,9 +42,10 @@
 
 	      let id = $stateParams._id;
 
-	      let photo = API.getIgetSingleImage(id);
+	      let photo = API.getSingleImage(id);
 		      photo.then(function(returnedPhotos) {
-		      vm.photo = returnedPhotos.data.images;
+		      	console.log(returnedPhotos);
+		      vm.photo = returnedPhotos.data;
 	      })
 	   });
 

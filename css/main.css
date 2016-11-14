@@ -47,8 +47,8 @@
           padding: 0 8px; }
 
 .main-content {
-  margin-top: 40px;
-  margin-bottom: 40px; }
+  margin-top: 30px;
+  margin-bottom: 50px; }
   .main-content .list-of-images {
     margin-bottom: 10px; }
     .main-content .list-of-images img {
@@ -71,16 +71,26 @@
       font-family: 'Molengo', sans-serif; }
 
 .photo-details {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 50px; }
   .photo-details h2 {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 40px; }
   .photo-details img {
+    border-radius: 5px;
+    border: 1px solid gray;
     max-width: 100%;
     max-height: 450px; }
+  .photo-details .photo-details-info {
+    font-size: 26px;
+    font-family: 'Molengo', sans-serif;
+    font-weight: 500; }
 
-.add-photo h2 {
-  text-align: center; }
+.add-photo {
+  margin-top: 30px;
+  margin-bottom: 50px; }
+  .add-photo h2 {
+    text-align: center; }
 
 footer {
   background-color: #337AB7;

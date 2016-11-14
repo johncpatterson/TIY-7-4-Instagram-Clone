@@ -2,12 +2,12 @@
    <h2>Photo Details</h2>
    <div class="row">
       <div class="col-md-6">
-         <img src="{{photo._id}}" class="photo-detail-image img-responsive">
+         <img src="{{controller.photo.url}}" class="photo-detail-image img-responsive">
       </div>
-      <div class="col-md-6">
-         <h2>{{photo.title}}</h2>
-         <!-- <p>{{photo.posted}}</p> -->
-         <p>{{photo.description}}</p>
+      <div class="col-md-6 photo-details-info">
+         <p>{{controller.photo.title}}</p>
+         <p>{{controller.photo.description}}</p>
+         <p>Added: {{controller.photo.posted | date:'mediumDate'}}</p>
       </div>
    </div>
 </div>

@@ -65,8 +65,8 @@
 
 // home
 .main-content {
-   margin-top: 40px;
-   margin-bottom: 40px;
+   margin-top: 30px;
+   margin-bottom: 50px;
    .list-of-images {
       margin-bottom: 10px;
       img {
@@ -97,19 +97,29 @@
 
 // photo details
 .photo-details {
-   margin-top: 40px;
+   margin-top: 30px;
    margin-bottom: 50px;
    h2 {
       text-align: center;
+      margin-bottom: 40px;
    }
    img {
+      border-radius: 5px;
+      border: 1px solid gray;
       max-width: 100%;
       max-height: 450px;
+   }
+   .photo-details-info {
+      font-size: 26px;
+      font-family: 'Molengo', sans-serif;
+      font-weight: 500;
    }
 }
 
 // add a photo
 .add-photo {
+   margin-top: 30px;
+   margin-bottom: 50px;
    h2 {
       text-align: center;
    }
