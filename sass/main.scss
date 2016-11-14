@@ -78,11 +78,15 @@
          margin-bottom: 5px;
       }
       i.fa-heart {
-         font-size: 17px;
+         font-size: 18px;
       }
       .photo-likes {
          font-size: 18px;
          font-family: 'Molengo', sans-serif;
+         position: absolute;
+         top: 178px;
+         left: 215px;
+         color: lightgray;
       }
       .photo-title {
          font-size: 16px;
@@ -113,6 +117,9 @@
       font-size: 26px;
       font-family: 'Molengo', sans-serif;
       font-weight: 500;
+      i.fa-heart-o {
+         padding-right: 4px;
+      }
    }
 }
 

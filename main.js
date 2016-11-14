@@ -62,5 +62,5 @@
             url: '/404',
             templateUrl: 'partials/404error.html',
          })
-   }
+      }
 })();

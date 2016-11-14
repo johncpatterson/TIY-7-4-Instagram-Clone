@@ -6,7 +6,6 @@
 
          let photos = API.getImages();
          photos.then(function(returnedPhotos) {
-            // console.log(returnedPhotos);
             vm.photos = returnedPhotos.data.images;
          })
 
@@ -31,9 +30,6 @@
             vm.photos = API.createImage(newImage);
             vm.form = {};
             window.location.assign("/#/")
-               // $("#photoTitle").val("");
-               // $("#photoURL").val("");
-               // $("#photoDescription").val("");
          }
       })
 
@@ -44,9 +40,8 @@
 
 	      let photo = API.getSingleImage(id);
 		      photo.then(function(returnedPhotos) {
-		      	console.log(returnedPhotos);
+		      console.log(returnedPhotos);
 		      vm.photo = returnedPhotos.data;
 	      })
 	   });
-
 })();

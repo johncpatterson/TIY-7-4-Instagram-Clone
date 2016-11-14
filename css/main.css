@@ -59,10 +59,14 @@
       margin-top: 10px;
       margin-bottom: 5px; }
     .main-content .list-of-images i.fa-heart {
-      font-size: 17px; }
+      font-size: 18px; }
     .main-content .list-of-images .photo-likes {
       font-size: 18px;
-      font-family: 'Molengo', sans-serif; }
+      font-family: 'Molengo', sans-serif;
+      position: absolute;
+      top: 178px;
+      left: 215px;
+      color: lightgray; }
     .main-content .list-of-images .photo-title {
       font-size: 16px;
       font-family: 'Molengo', sans-serif; }
@@ -85,6 +89,8 @@
     font-size: 26px;
     font-family: 'Molengo', sans-serif;
     font-weight: 500; }
+    .photo-details .photo-details-info i.fa-heart-o {
+      padding-right: 4px; }
 
 .add-photo {
   margin-top: 30px;
