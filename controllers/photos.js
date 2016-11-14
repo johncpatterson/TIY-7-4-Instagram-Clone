@@ -19,7 +19,7 @@
          }
 
          vm.onClickDetails = function(id, photo) {
-            $state.go('details',{_id:});
+            $state.go('details', { _id: id });
          }
 
          vm.submit = function(photo) {
@@ -35,13 +35,17 @@
                // $("#photoURL").val("");
                // $("#photoDescription").val("");
          }
-      });
-
+      })
 
 	   .controller('IDController', function(API, $state, $stateParams) {
 	      let vm = this;
 
 	      let id = $stateParams._id;
+
+	      let photo = API.getIgetSingleImage(id);
+		      photo.then(function(returnedPhotos) {
+		      vm.photo = returnedPhotos.data.images;
+	      })
 	   });
 
 })();
