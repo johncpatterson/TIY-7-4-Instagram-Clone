@@ -32,12 +32,12 @@
             views: {
                'content': {
                   templateUrl: 'partials/photodetails.html',
-                  controller: 'PhotoController',
+                  controller: 'IDController',
                   controllerAs: 'controller'
                },
                'sidebar': {
                   templateUrl: 'partials/nav.html',
-                  controller: 'PhotoController',
+                  controller: 'IDController',
                   controllerAs: 'controller'
                }
             }

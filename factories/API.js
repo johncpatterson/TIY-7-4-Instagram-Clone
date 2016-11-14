@@ -31,11 +31,11 @@
             });
             return call;
          }
-         const getSingleImage = function() {
+         const getSingleImage = function(id) {
             var call = $http({
                method: 'GET',
                headers: { 'X_CSRF_TOKEN': 'patterson' },
-               url: `http://instagramcloneclass.herokuapp.com/images/${id}`
+               url: `http://instagramcloneclass.herokuapp.com/images/${_id}`
             });
             return call;
          }

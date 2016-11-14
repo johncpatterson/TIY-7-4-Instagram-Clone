@@ -1,7 +1,7 @@
 (function() {
    angular
       .module('hipstagram')
-      .controller('PhotoController', function(API, $stateParams) {
+      .controller('PhotoController', function(API, $state, $stateParams) {
          let vm = this;
 
          let photos = API.getImages();
@@ -19,13 +19,9 @@
          }
 
          vm.onClickDetails = function(id, photo) {
-            let id = $stateParams.details;
-
-            API.getSingleImage(id);
-
-
-
+            $state.go('details',{_id:});
          }
+
          vm.submit = function(photo) {
             let newImage = {
                title: photo.phototitle,
@@ -40,4 +36,12 @@
                // $("#photoDescription").val("");
          }
       });
+
+
+	   .controller('IDController', function(API, $state, $stateParams) {
+	      let vm = this;
+
+	      let id = $stateParams._id;
+	   });
+
 })();
