@@ -16,10 +16,13 @@
         padding-right: 18px;
         border-right: 1px solid black;
         color: black; }
-      .nav-container .inner-nav-container .instagram-logo-div img.instagram-text-logo {
-        max-width: 124px;
-        padding-bottom: 9px;
-        padding-left: 5px; }
+      .nav-container .inner-nav-container .instagram-logo-div .instagram-logo-text {
+        font-size: 33px;
+        font-family: 'Grand Hotel', cursive;
+        font-weight: 600;
+        color: black; }
+      .nav-container .inner-nav-container .instagram-logo-div a:hover {
+        text-decoration: none; }
     .nav-container .inner-nav-container .search-input-div {
       padding-bottom: 15px; }
       .nav-container .inner-nav-container .search-input-div input {

@@ -21,10 +21,14 @@
             border-right: 1px solid black;
             color: black;
          }
-         img.instagram-text-logo {
-            max-width: 124px;
-            padding-bottom: 9px;
-            padding-left: 5px;
+         .instagram-logo-text {
+            font-size: 33px;
+            font-family: 'Grand Hotel', cursive;
+            font-weight: 600;
+            color: black;
+         }
+         a:hover {
+            text-decoration: none;
          }
       }
       .search-input-div {
@@ -76,9 +80,6 @@
          border: 1px solid gray;
          margin-top: 10px;
          margin-bottom: 5px;
-         // -webkit-animation-duration: 2s;
-         // -webkit-animation-delay: 0s;
-         // -webkit-animation-iteration-count: 1;
       }
       i.fa-heart {
          font-size: 22px;
