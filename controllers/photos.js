@@ -1,4 +1,14 @@
 (function() {
+    $.fn.extend({
+      animateCss: function(animationName) {
+         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+         this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+         });
+      }
+   });
+
+
    angular
       .module('hipstagram')
       .controller('PhotoController', function(API, $state, $stateParams) {
@@ -9,12 +19,16 @@
             vm.photos = returnedPhotos.data.images;
          })
 
-         vm.onClickLike = function(id, photo) {
+         vm.onClickLike = function(id, photo,e) {
             let obj = {
                imageid: id,
             };
             vm.likedPhoto = API.likeImage(obj);
             photo.likes++;
+            if (photo._id === id) {
+              $(`img[data-id="${id}"]`).animateCss('tada'); 
+            }
+            
          }
 
          vm.onClickDetails = function(id, photo) {

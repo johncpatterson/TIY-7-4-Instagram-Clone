@@ -62,5 +62,20 @@
             url: '/404',
             templateUrl: 'partials/404error.html',
          })
+   }
+
+   $.fn.extend({
+      animateCss: function(animationName) {
+         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+         this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+         });
       }
+   });
+   
+   $('instagram-text-logo').animateCss('bounce');
+
+
+
+
 })();

@@ -1,9 +1,11 @@
 <div class="container main-content">
    <div class="row">
       <div class="col-md-3 list-of-images" ng-repeat="photo in controller.photos track by $index">
-         <img src="{{photo.url}}" ui-sref="details(photo._id)" ng-dblclick="controller.onClickLike(photo._id,photo)" ng-click="controller.onClickDetails(photo._id,photo)" class="img-responsive">
-         <i class="fa fa-heart" aria-hidden="true" ng-dblclick="controller.onClickLike(photo._id,photo)"></i>
-         <span class="photo-likes"><i class="fa fa-heart" aria-hidden="true"></i> = {{photo.likes}}</span>
+         <div class="animated-div">
+            <img data-id="{{photo._id}}" src="{{photo.url}}" ui-sref="details(photo._id)" ng-click="controller.onClickDetails(photo._id,photo)" class="img-responsive returned-image">
+            <span class="photo-likes"><i class="fa fa-heart" aria-hidden="true"></i> = {{photo.likes}}</span>
+         </div>
+         <i class="fa fa-heart animated wobble" aria-hidden="true" ng-dblclick="controller.onClickLike(photo._id,photo,$event)"></i>
          <br>
          <span class="photo-title">{{photo.title}}</span>
          <br>

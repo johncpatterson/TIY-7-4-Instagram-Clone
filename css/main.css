@@ -59,13 +59,17 @@
       margin-top: 10px;
       margin-bottom: 5px; }
     .main-content .list-of-images i.fa-heart {
-      font-size: 18px; }
+      font-size: 22px;
+      padding-left: 3px;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay: 2s;
+      -webkit-animation-iteration-count: 2; }
     .main-content .list-of-images .photo-likes {
       font-size: 18px;
       font-family: 'Molengo', sans-serif;
       position: absolute;
       top: 178px;
-      left: 215px;
+      left: 208px;
       color: lightgray; }
     .main-content .list-of-images .photo-title {
       font-size: 16px;
@@ -73,6 +77,10 @@
     .main-content .list-of-images .photo-time-posted {
       font-size: 16px;
       font-family: 'Molengo', sans-serif; }
+  .main-content .animated-div {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1; }
 
 .photo-details {
   margin-top: 30px;

@@ -76,16 +76,23 @@
          border: 1px solid gray;
          margin-top: 10px;
          margin-bottom: 5px;
+         // -webkit-animation-duration: 2s;
+         // -webkit-animation-delay: 0s;
+         // -webkit-animation-iteration-count: 1;
       }
       i.fa-heart {
-         font-size: 18px;
+         font-size: 22px;
+         padding-left: 3px;
+         -webkit-animation-duration: 2s;
+         -webkit-animation-delay: 2s;
+         -webkit-animation-iteration-count: 2;
       }
       .photo-likes {
          font-size: 18px;
          font-family: 'Molengo', sans-serif;
          position: absolute;
          top: 178px;
-         left: 215px;
+         left: 208px;
          color: lightgray;
       }
       .photo-title {
@@ -96,6 +103,11 @@
          font-size: 16px;
          font-family: 'Molengo', sans-serif;
       }
+   }
+   .animated-div {
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay: 0s;
+      -webkit-animation-iteration-count: 1;
    }
 }
 
