@@ -1,158 +1,180 @@
-// @import 'nav';
-// @import 'footer';
-.hidden {
-   visibility: hidden;
-}
-
-// nav
-.nav-container {
-   background-color: #ffffff;
-   min-height: 80px;
-   max-height: 158px;
-   border-bottom: 1px solid #dbdbdb;
-   .inner-nav-container {
+  // @import 'nav';
+  // @import 'footer';
+  .hidden {
+    visibility: hidden;
+  }
+  
+  // nav
+  .nav-container {
+    background-color: #ffffff;
+    min-height: 80px;
+    max-height: 165px;
+    border-bottom: 1px solid #dbdbdb;
+    .inner-nav-container {
       margin-top: 20px;
       .instagram-logo-div {
-         text-align: center;
-         .fa-instagram {
-            font-size: 35px;
-            margin-right: 10px;
-            padding-right: 18px;
-            border-right: 1px solid black;
-            color: black;
-         }
-         .instagram-logo-text {
-            font-size: 33px;
-            font-family: 'Grand Hotel', cursive;
-            font-weight: 600;
-            color: black;
-         }
-         a:hover {
-            text-decoration: none;
-         }
+        text-align: center;
+        margin-bottom: 5px;
+        .fa-instagram {
+          font-size: 35px;
+          margin-right: 10px;
+          padding-right: 18px;
+          border-right: 1px solid black;
+          color: black;
+        }
+        .instagram-logo-text {
+          font-size: 33px;
+          font-family: 'Grand Hotel', cursive;
+          font-weight: 600;
+          color: black;
+        }
+        a:hover {
+          text-decoration: none;
+        }
       }
       .search-input-div {
-         padding-bottom: 15px;
-         input {
-            width: 70%;
-            display: inline;
-            margin-left: 76px;
-            font-size: 14px;
-            text-align: center;
-            background: #fafafa;
-         }
+        padding-bottom: 15px;
+        input {
+          // width: 70%;
+          display: inline;
+          // margin-left: 76px;
+          font-size: 14px;
+          text-align: center;
+          background: #fafafa;
+        }
       }
       .nav-links-div {
-         margin-top: -3px;
-         text-align: center;
-         padding-right: 40px;
-         .nav-links {
+        margin-top: -3px;
+        text-align: center;
+        .nav-links {
+          display: inline-block;
+          padding-left: 0;
+          .fa-home {
+            font-size: 35px;
+          }
+          .fa-plus {
+            font-size: 22px;
+            padding-right: 2px;
+          }
+          .fa-file-image-o {
+            font-size: 35px;
+          }
+          li {
             display: inline-block;
-            .fa-home {
-               font-size: 35px;
-            }
-            .fa-plus {
-               font-size: 22px;
-               padding-right: 2px;
-            }
-            .fa-file-image-o {
-               font-size: 35px;
-            }
-            li {
-               display: inline-block;
-               padding: 0 8px;
-            }
-         }
+            padding: 0 8px;
+          }
+        }
       }
-   }
-}
-
-// home
-.main-content {
-   margin-top: 30px;
-   margin-bottom: 50px;
-   .list-of-images {
+    }
+  }
+  
+  // home
+  .main-content {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    .list-of-images {
+      position: relative;
       margin-bottom: 10px;
+      text-align: center;
       img {
-         width: 265px;
-         height: 200px;
-         border-radius: 5px;
-         border: 1px solid gray;
-         margin-top: 10px;
-         margin-bottom: 5px;
+        width: 265px;
+        height: 200px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        margin-top: 10px;
+        margin-bottom: 5px;
       }
       i.fa-heart {
-         font-size: 22px;
-         padding-left: 3px;
-         -webkit-animation-duration: 2s;
-         -webkit-animation-delay: 2s;
-         -webkit-animation-iteration-count: 2;
+        font-size: 22px;
+        padding-left: 3px;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-delay: 2s;
+        -webkit-animation-iteration-count: 2;
       }
       .photo-likes {
-         font-size: 18px;
-         font-family: 'Molengo', sans-serif;
-         position: absolute;
-         top: 178px;
-         left: 208px;
-         color: lightgray;
+        font-size: 18px;
+        font-family: 'Molengo', sans-serif;
+        position: relative;
+        bottom: 41px;
+        left: 79px;
+        color: lightgray;
       }
       .photo-title {
-         font-size: 16px;
-         font-family: 'Molengo', sans-serif;
+        font-size: 16px;
+        font-family: 'Molengo', sans-serif;
       }
       .photo-time-posted {
-         font-size: 16px;
-         font-family: 'Molengo', sans-serif;
+        font-size: 16px;
+        font-family: 'Molengo', sans-serif;
       }
-   }
-   .animated-div {
+    }
+    .animated-div {
+      position: relative;
       -webkit-animation-duration: 2s;
       -webkit-animation-delay: 0s;
       -webkit-animation-iteration-count: 1;
-   }
-}
-
-// photo details
-.photo-details {
-   margin-top: 30px;
-   margin-bottom: 50px;
-   h2 {
+    }
+  }
+  
+  // photo details
+  .photo-details {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    h2 {
       text-align: center;
       margin-bottom: 40px;
-   }
-   img {
+    }
+    img {
       border-radius: 5px;
       border: 1px solid gray;
       max-width: 100%;
       max-height: 450px;
-   }
-   .photo-details-info {
+    }
+    .photo-details-info {
       font-size: 26px;
       font-family: 'Molengo', sans-serif;
       font-weight: 500;
       i.fa-heart-o {
-         padding-right: 4px;
+        padding-right: 4px;
       }
-   }
-}
-
-// add a photo
-.add-photo {
-   margin-top: 30px;
-   margin-bottom: 50px;
-   h2 {
+    }
+  }
+  
+  // add a photo
+  .add-photo {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    h2 {
       text-align: center;
-   }
-}
-
-// footer 
-footer {
-   background-color: #337AB7;
-   height: 100px;
-   color: white;
-   margin-top: 40px;
-   .copyright-info {
+    }
+  }
+  
+  // footer 
+  footer {
+    background-color: #337AB7;
+    height: 100px;
+    color: white;
+    margin-top: 40px;
+    .copyright-info {
       text-align: center;
       padding-top: 9px;
-   }
-}
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main-content {
+      .list-of-images {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .main-content {
+      .list-of-images {
+        .photo-likes {
+          left: 41%;
+        }
+      }
+    }
+  }

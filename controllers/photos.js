@@ -1,5 +1,6 @@
 (function() {
-    $.fn.extend({
+   // extend jQuery in order to reuse the following function to add and remove the animate.css classes after the animation completes
+   $.fn.extend({
       animateCss: function(animationName) {
          var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
          this.addClass('animated ' + animationName).one(animationEnd, function() {
@@ -19,16 +20,16 @@
             vm.photos = returnedPhotos.data.images;
          })
 
-         vm.onClickLike = function(id, photo,e) {
+         vm.onClickLike = function(id, photo, e) {
             let obj = {
                imageid: id,
             };
             vm.likedPhoto = API.likeImage(obj);
             photo.likes++;
-            if (photo._id === id) {
-              $(`img[data-id="${id}"]`).animateCss('tada'); 
-            }
-            
+            // animate liked photo on click
+            $(`img[data-id="${id}"]`).animateCss('tada');
+
+
          }
 
          vm.onClickDetails = function(id, photo) {
@@ -47,15 +48,15 @@
          }
       })
 
-	   .controller('IDController', function(API, $state, $stateParams) {
-	      let vm = this;
+   .controller('IDController', function(API, $state, $stateParams) {
+      let vm = this;
 
-	      let id = $stateParams._id;
+      let id = $stateParams._id;
 
-	      let photo = API.getSingleImage(id);
-		      photo.then(function(returnedPhotos) {
-		      console.log(returnedPhotos);
-		      vm.photo = returnedPhotos.data;
-	      })
-	   });
+      let photo = API.getSingleImage(id);
+      photo.then(function(returnedPhotos) {
+         console.log(returnedPhotos);
+         vm.photo = returnedPhotos.data;
+      })
+   });
 })();
